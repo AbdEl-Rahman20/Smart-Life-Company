@@ -1,0 +1,428 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main: #8dbeee;
+    --white: #f9ffff;
+    --blue: rgba(0, 17, 63, 255);
+    --light_blue: #1f3181;
+    --sky: #00fefc;
+    --product_name_font: 'Playpen Sans'
+}
+
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    overflow-x: hidden;
+}
+
+/* Navbar */
+
+nav {
+    width: 100%;
+    height: 5rem;
+    background: var(--blue);
+    color: var(--white);
+}
+
+nav li{
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    list-style: none;
+}
+
+.dropdown-item:hover{
+    background: var(--main);
+}
+
+.nav-logo {
+    cursor: pointer;
+}
+
+.container-fluid{
+    margin-top: 1.25rem;
+    width: 35rem;
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.search_bar {
+    border: none;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.nav-icons {
+    color: var(--main);
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.nav-icons a{
+    color: var(--main);
+}
+
+.cart-icon {
+    cursor: pointer;
+    transition: .5s;
+}
+
+.cart-icon:hover {
+    color: var(--white);
+}
+
+
+.nav_bar_icon {
+    align-items: center;
+    font-size: 1.25rem;
+    cursor: pointer;
+    transition: .5s;
+    color: var(--main);
+    display: none;
+}
+
+.nav_bar_icon:hover {
+    color: var(--white);
+}
+
+/* carousel */
+
+.carousel-caption {
+    display: flex;
+    top: 10rem;
+    left: 1rem;
+}
+
+.time_available {
+    font-family: var(--product_name_font);
+    font-size: 2rem;
+}
+
+.carousel-item img {
+    height: 30rem;
+}
+
+/* Brands */
+
+.brands_logo img {
+    cursor: pointer;
+    transition: .5s;
+}
+
+.brands_logo img:hover {
+    transform: scale(1.1, 1.1);
+}
+
+/* About us */
+
+.about_content {
+    line-height: 2rem;
+}
+
+/* Products */
+
+.sections_header {
+    font-size: 4rem;
+    margin-left: 2rem;
+    font-family: var(--product_name_font);
+}
+
+.product_item {
+    cursor: pointer;
+    border: 1px solid var(--main);
+}
+
+.product_name {
+    font-family: var(--product_name_font);
+    bottom: -100%;
+    width: 80%;
+    left: 10%;
+    background: rgba(0, 0, 0, .5);
+    padding: 1rem;
+    text-align: center;
+    border-radius: .3rem;
+    transition: .5s ease-in;
+}
+
+.product_item:hover .product_name {
+    bottom: 1rem;
+}
+
+/* Services Section */
+
+.delivery_content{
+    margin-top: 3rem;
+    margin-left: 3rem;
+}
+
+.lockers_photo img {
+    transition: .5s;
+}
+
+.lockers_photo img:hover {
+    transform: scale(1.1, 1.1);
+}
+
+.loker_content{
+    padding: 2rem;
+    z-index: 1;
+}
+
+.lockers_btn {
+    color: black;
+    text-decoration: none;
+    transition: .5s;
+}
+
+.lockers_btn:hover {
+    color: var(--main);
+    text-decoration: underline;
+}
+
+/* Collections */
+
+.collection_icon {
+    bottom: 1rem;
+    right: -100%;
+    transition: .4s ease-in;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, .5);
+    background: var(--white);
+    color: var(--main);
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wish_icon{
+    top: 1rem;
+    right: -100%;
+}
+
+.collection_item {
+    cursor: pointer;
+    height: 100%;
+}
+
+.collection_item:hover .collection_icon {
+    bottom: 1rem;
+    right: .5rem;
+}
+
+.collection_img img {
+    width: 90%;
+    height: 12rem;
+    margin: auto;
+    display: flex;
+}
+
+/* Items */
+
+.item_photo img{
+    height: 30rem;
+}
+
+/* Contact Page */
+
+.contact_window{
+    width: 100%;
+    height: 10rem;
+    border-radius: 1rem;
+    border: 2px solid var(--blue);
+    text-align: center;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.contact_window a {
+    text-decoration: none;
+    color: black;
+}
+
+.contactWindow a {
+    text-decoration: none;
+    color: black;
+}
+
+.contactWindow{
+    width: 100%;
+    height: 10rem;
+    border-radius: 1rem;
+    border: 2px solid var(--blue);
+    text-align: center;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.contact_window:hover{
+    background: var(--light_blue);
+    .contactName{
+        color: var(--white);
+        transition: .5s;
+    }
+}
+
+.contactWindow:hover{
+    background: var(--light_blue);
+    .contact_content{
+        color: var(--white);
+        transition: .5s;
+    }
+}
+
+.contactPage_icon{
+    margin-top: 1rem;
+    font-size: 3rem;
+    color: var(--main);
+}
+
+/* Scroll */
+
+.scroll_btn {
+    font-size: 1rem;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main);
+    position: fixed;
+    bottom: 1rem;
+    right: 1.5rem;
+    width: 3rem;
+    height: 3rem;
+    cursor: pointer;
+}
+
+/* Footer */
+
+.big_footer {
+    background: var(--light_blue);
+}
+
+.footer_icons a{
+    text-decoration: none;
+}
+
+.mynumber {
+    text-decoration: none;
+    color: var(--white);
+    transition: .5s;
+}
+
+.mynumber:hover {
+    cursor: pointer;
+    color: var(--main);
+}
+
+.social_icons {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
+    font-size: 1.5rem;
+    background: var(--blue);
+    color: var(--white);
+    border-radius: 100%;
+    transition: .5s;
+}
+
+.social_icons:hover {
+    color: var(--blue);
+    background: var(--white);
+}
+
+.small_footer {
+    background: var(--blue);
+}
+
+.footer_content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_content a {
+    text-decoration: none;
+    transition: .5s;
+}
+
+.footer_content a:hover {
+    color: var(--main);
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+
+    .nav-logo h1 {
+        margin-top: .2rem;
+    }
+
+    .container-fluid {
+        width: 24rem;
+    }
+
+    .dropdown {
+        display: none;
+    }
+
+    .delivery_content {
+        margin-top: 2rem;
+    }
+
+    .loker_content{
+        padding: .5rem;
+    }
+
+    .email_contactpage{
+        font-size: .8rem;
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+    .nav-logo h1 {
+        margin-top: .6rem;
+        font-size: 1.5rem;
+    }
+
+    .nav_bar_icon {
+        display: none;
+    }
+
+    .dropdown {
+        display: flex;
+        font-size: 1rem;
+    }
+
+    .container-fluid {
+        display: none;
+    }
+
+    .delivery_content {
+        margin-top: 1rem;
+        margin-left: 2rem;
+    }
+
+    .footer_content{
+        display: block;
+        text-align: center;
+    }
+
+    .collection_item{
+        height: 100%;
+    }
+
+    .collection_img img{
+        height: 400px;
+    }
+
+    .sections_header{
+        font-size: 2rem;
+    }
+
+}

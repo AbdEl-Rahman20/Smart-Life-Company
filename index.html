@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="website icon" type="jpg" href="assets/images/photo_2023-10-30_16-54-40.jpg">
+    <title>Smart Life Company</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/styles/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Playpen+Sans:wght@100;200;300;400;500;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Start Navbar -->
+    <nav class="d-flex justify-content-around sticky-top">
+        <div class="nav-logo d-flex mt-3">
+            <div class="logo">
+                <img class="rounded-pill w-100 h-75" src="assets/images/photo_2023-10-30_16-54-40.jpg" alt="">
+            </div>
+            <h1 class="text-uppercase ms-2">smart life</h1>
+        </div>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Our Products
+            </a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item fs-6" href="http://127.0.0.1:5500/collections.html?category=smart_locks">SMART LOCKS</a></li>
+                <li><a class="dropdown-item fs-6" href="http://127.0.0.1:5500/collections.html?category=cctv">CCTV</a></li>
+                <li><a class="dropdown-item fs-6" href="http://127.0.0.1:5500/collections.html?category=sonoff">SONOFF</a></li>
+            </ul>
+        </li>
+        <div class="container-fluid">
+            <form class="d-flex" role="search">
+                <input class="search_bar form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-primary" type="submit">Search</button>
+            </form>
+        </div>
+        <div class="nav-icons">
+            <a href="index.html" class="cart-icon home-icon">
+                <i class="fa-solid fa-house"></i>
+            </a>
+            <!-- <div class="cart-icon wish-icon">
+                <i class="fa-solid fa-heart"></i>
+            </div>
+            <div class="cart-icon">
+                <i class="fas fa-cart-shopping"></i>
+            </div>
+            <div class="nav_bar_icon">
+                <i class="fa-solid fa-bars"></i>
+            </div> -->
+        </div>
+    </nav>
+    <!-- End Navbar -->
+
+    <!-- Start Main -->
+    <main class="bg-light">
+        <section class="carousel_landing">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div id="carouselExampleCaptions" class="carousel slide">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                                    aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="assets/images/web3.jpg" class="d-block w-100" alt="...">
+                                    <div class="carousel-caption d-block">
+                                        <h5 class="mb-3 text-uppercase">we are available anywhere & anytime</h5>
+                                        <h6 class="time_available">24/7</h6>
+                                        <a href="contactus.html" class="btn slide1_btn btn-outline-primary text-uppercase text-light">contact us</a>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="assets/images/web4.jpg" class="d-block w-100" alt="...">
+                                    <div class="carousel-caption d-block">
+                                        <h1 class="mb-2">join our community now</h1>
+                                        <h2>be smart & live smart.</h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <section class="brands mt-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="brands_logo">
+                            <img src="assets/images/lezn.png" class="w-100" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="brands_logo">
+                            <img src="assets/images/tuya.jpg" class="w-100" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="brands_logo">
+                            <img src="assets/images/sib.png" class="w-100" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="brands_logo">
+                            <img src="assets/images/SONOFF.png" class="w-100" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="aboutus mt-3">
+            <div class="container">
+                <div class="about_header d-flex justify-content-center mb-3">
+                    <h2 class="sections_header text-uppercase text-secondary">about us</h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="aboutus_photo">
+                            <img class="w-100" src="assets/images/web1.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="about_content mt-1">
+                            <h2>Smart Life Company</h2>
+                            <p class="text-secondary">
+                                Headquartered in Tanta, near District 2. <br>
+                                Smart Life Co provides valuable Solutions for the Internet of Things (IoT) with its resource-saving energy
+                                harvesting technology. <br>
+                                For more than 3 years, SLC produces shipping-free and installation and after selling service and support packages.
+                            </p>
+                            <h6 class="fw-bold">We aim to travel all over the world and more it is just a beginning !</h6>
+                        </div>  
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="product_container mt-5">
+            <div class="container">
+                <div class="products_header">
+                    <h2 class="sections_header text-uppercase mb-3 text-secondary">our products</h2>
+                </div>
+                <div class="row g-3" id="showProducts">
+
+                </div>
+            </div>
+        </section>
+        <section class="delivery_section mt-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="delivery">
+                            <div class="delivery_content position-absolute">
+                                <h5 class="text-uppercase fw-bold text-light"><span>free</span><span class="text-primary">delivery</span></h5>
+                                <h2 class="fw-bold text-light">On all products</h2>
+                                <h3 class="text-light">To your doorstep</h3>
+                            </div>
+                            <div class="delivery_photo">
+                                <img class="rounded-1 w-100" src="assets/images/Untitled-design-1.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="services_container mt-5">
+            <div class="container">
+                <div class="services_header">
+                    <h2 class="sections_header text-uppercase mb-3 text-secondary">our services</h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 mb-1">
+                        <div class="sittings_locker overflow-hidden rounded text-dark">
+                            <div class="loker_content position-absolute">
+                                <h3 class="text-uppercase fw-bold">book</h3>
+                                <h6 class="mb-3">Service Appointment</h6>
+                                <a class="lockers_btn" href="#">Click Here</a>
+                            </div>
+                            <div class="lockers_photo overflow-hidden">
+                                <img class="w-100" src="assets/images/Customer-Support-8.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-1">
+                        <div class="sittings_locker overflow-hidden rounded text-dark">
+                            <div class="loker_content position-absolute">
+                                <h3 class="text-uppercase fw-bold">contact</h3>
+                                <h6 class="mb-3">After Sales Support</h6>
+                                <a class="lockers_btn" href="#">Click Here</a>
+                            </div>
+                            <div class="lockers_photo overflow-hidden">
+                                <img class="w-100" src="assets/images/Customer-Support-9.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-1">
+                        <div class="sittings_locker overflow-hidden rounded text-dark">
+                            <div class="loker_content position-absolute">
+                                <h3 class="text-uppercase fw-bold">apply us</h3>
+                                <h6 class="mb-3">Retail Store</h6>
+                                <a class="lockers_btn" href="#">Click Here</a>
+                            </div>
+                            <div class="lockers_photo overflow-hidden">
+                                <img class="w-100" src="assets/images/Customer-Support-10.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="scroll_btn rounded-pill text-light" id="scroll_btn">
+            <i class="fa-solid fa-arrow-up"></i>
+        </div>
+    </main>
+    <!-- End Main -->
+
+    <!-- Start Footer -->
+    <footer>
+        <section class="big_footer mt-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="top_footer text-light mt-5">
+                            <h6 class="d-flex justify-content-center">Do you have a question ? Call Us</h6>
+                            <h4><a href="tel:+201288585486" class="mynumber d-flex justify-content-center">+20 128 858 5486</a></h4>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <h6 class="text-light d-flex justify-content-center mt-3">Chat With Us !</h6>
+                        <div class="footer_icons d-flex justify-content-center gap-3 mb-5">
+                            <a href="https://www.facebook.com/smartlife.c0?mibextid=JRoKGi" target="_blank" class="social_icons">
+                                <i class="fa-brands fa-facebook"></i>
+                            </a>
+                            <a href="https://instagram.com/smart_life_co?igshid=NzZlODBkYWE4Ng%3D%3D&utm_source=qr" target="_blank" class="social_icons">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                            <a href="https://www.tiktok.com/@smart.life.co?_t=8hz0HlnzbCE&_r=1" target="_blank" class="social_icons">
+                                <i class="fa-brands fa-tiktok"></i>
+                            </a>
+                            <a href="https://wa.link/id4l3m" target="_blank" class="social_icons">
+                                <i class="fa-brands fa-whatsapp"></i>
+                            </a>
+                            <a href="mailto:Smartlife.c00@gmail.com" target="_blank" class="social_icons">
+                                <i class="fa-regular fa-envelope"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="small_footer">
+            <div class="container">
+                <div class="footer_content text-light pt-3 pb-3">
+                        <div class="copyright">
+                            <span>© Copyright <a class="fw-bold" href="index.html">SLC</a>. All Rights Reserved</span>
+                        </div>
+                        <div class="designer">
+                            <span>Designed by <a class="fw-bold" href="https://www.instagram.com/abdibsa233/?next=%2F">AbdEl-Rahman Saleh</a></span>
+                        </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+    <!-- End Footer -->
+
+    <script src="assets/scripts/bootstrap.bundle.min.js"></script>
+    <script src="assets/scripts/main.js"></script>
+</body>
+
+</html>
